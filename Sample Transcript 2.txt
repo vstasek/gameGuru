@@ -1,0 +1,40 @@
+Welcome to Game Guru!
+Enter '1' if you would like to obtain a list of games.
+Enter '2' if you would like to add a game to the database.
+>>> 2
+
+Enter name of game: FEZ
+Enter year game was released: 2012
+
+Enter the game's genre
+Genre choices include: 'Action-Adventure', 'Fighting', 'Platformer', 'Racing', 'Role-Playing', 'Shooter', and 'Sports'
+>>> Platformer
+
+Enter game's sub-genre
+Subgenre choices include: '2D' and '3D'
+>>> 2D
+
+Enter game's perspective
+Choices include: 'First' or 'Third'
+>>> Third
+
+Enter developer: Polytron Corporation
+Enter max number of players: 1
+
+Enter ESRB Rating
+Choices include: 'KA', 'EC', 'E', 'E10', 'T', 'M', 'AO', 'RP'
+>>> E
+
+Enter console: Xbox 360
+Is the game on another console? (Y/N) n
+Platformer FEZ
++-------+------+------------+----------------------+------------+--------+----------+------+-------------+
+| title | year |   genre    |      developer       | maxPlayers | ageCap |  isFor   | type | perspective |
++-------+------+------------+----------------------+------------+--------+----------+------+-------------+
+|  FEZ  | 2012 | Platformer | Polytron Corporation |     1      |   0    | Xbox 360 |  2D  |    Third    |
++-------+------+------------+----------------------+------------+--------+----------+------+-------------+
+Would you like to add another game? (Y/N) n
+
+Would you like to do anything else? (Y/N) n
+
+Thank you for using Game Guru!

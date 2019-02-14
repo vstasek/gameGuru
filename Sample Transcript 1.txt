@@ -1,0 +1,54 @@
+Welcome to Game Guru!
+Enter '1' if you would like to obtain a list of games.
+Enter '2' if you would like to add a game to the database.
+>>> 1
+
+Enter '1' to search for age appropriate games.
+Enter '2' to search for games before or after a certain year.
+Enter '3' to search for games made by a specific developer.
+Enter '4' to search for games on a specific console.
+Enter '5' to search for games of a particular genre.
+>>> 2
+
+Enter year: 1990
+Enter whether you want all games made 'Before' or 'After' this year.
+i.e. Entering 'Before' will list only games made before the year you entered.
+>>> Before
+
++---------------------------+------+---------+-----------+------------+--------+---------------+
+|           title           | year |  genre  | developer | maxPlayers | ageCap |     isFor     |
++---------------------------+------+---------+-----------+------------+--------+---------------+
+|           Contra          | 1987 | Shooter |   Konami  |     2      |   13   |      NES      |
+|         Duck Hunt         | 1984 | Shooter |  Nintendo |     2      |   0    |      NES      |
+|        Power Strike       | 1988 | Shooter |  Compile  |     1      |   0    | Master System |
+| World Championship Soccer | 1989 |  Sports |    Sega   |     2      |   0    |    Genesis    |
+| World Championship Soccer | 1989 |  Sports |    Sega   |     2      |   0    | Master System |
++---------------------------+------+---------+-----------+------------+--------+---------------+
+Would you like to obtain another list? (Y/N) y
+
+Enter '1' to search for age appropriate games.
+Enter '2' to search for games before or after a certain year.
+Enter '3' to search for games made by a specific developer.
+Enter '4' to search for games on a specific console.
+Enter '5' to search for games of a particular genre.
+>>> 5
+
+Enter the game's genre
+Genre choices include: 'Action-Adventure', 'Fighting', 'Platformer', 'Racing', 'Role-Playing', 'Shooter', and 'Sports'
+>>> Action-Adventure
+
+If you want all Action-Adventure games, type 'all'
+If you want only the games in an Action-Adventure subgenre, type the subgenre.
+Subgenre choices include: 'Standard', 'Stealth', and 'Survival Horror'
+>>> Survival Horror
+
++-------------+------+------------------+-------------------------------------+------------+--------+-------------+-----------------+-------------+
+|    title    | year |      genre       |              developer              | maxPlayers | ageCap |    isFor    |       type      | perspective |
++-------------+------+------------------+-------------------------------------+------------+--------+-------------+-----------------+-------------+
+| Silent Hill | 1999 | Action-Adventure | Konami Computer Entertainment Tokyo |     1      |   17   | Playstation | Survival Horror |    Third    |
++-------------+------+------------------+-------------------------------------+------------+--------+-------------+-----------------+-------------+
+Would you like to obtain another list? (Y/N) n
+
+Would you like to do anything else? (Y/N) n
+
+Thank you for using Game Guru!

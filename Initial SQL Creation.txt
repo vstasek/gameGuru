@@ -1,0 +1,206 @@
+CREATE TABLE Games (
+title VARCHAR(255), 
+year INT, 
+genre VARCHAR(255), 
+developer VARCHAR (255), 
+maxPlayers INT, 
+ageCap INT, 
+PRIMARY KEY(title, year));
+
+CREATE TABLE Consoles (
+consoleName VARCHAR(255));
+
+CREATE TABLE isFor (
+title VARCHAR(255),
+year INT,
+isFor VARCHAR(255));
+
+CREATE TABLE Action_Adventure (
+title VARCHAR(255), 
+year INT, 
+type VARCHAR(255), 
+perspective VARCHAR(255), 
+PRIMARY KEY(title, year));
+
+CREATE TABLE Fighting (
+title VARCHAR(255),
+year INT,
+PRIMARY KEY(title, year));
+
+CREATE TABLE Platformer (
+title VARCHAR(255),
+year INT, 
+type VARCHAR(255),
+perspective VARCHAR(255),
+PRIMARY KEY(title, year));
+
+CREATE TABLE Racing (
+title VARCHAR(255),
+year INT,
+PRIMARY KEY(title, year));
+
+CREATE TABLE RPG (
+title VARCHAR(255), 
+year INT, 
+type VARCHAR(255), 
+PRIMARY KEY(title, year));
+
+CREATE TABLE Shooter (
+title VARCHAR(255), 
+year INT, 
+type VARCHAR(255), 
+PRIMARY KEY(title, year));
+
+CREATE TABLE Sports (
+title VARCHAR(255), 
+year INT, 
+type VARCHAR(255), 
+PRIMARY KEY(title, year));
+
+INSERT INTO Consoles VALUES ("Master System");
+INSERT INTO Consoles VALUES ("Genesis");
+INSERT INTO Consoles VALUES ("Saturn");
+INSERT INTO Consoles VALUES ("Dreamcast");
+INSERT INTO Consoles VALUES ("Playstation");
+INSERT INTO Consoles VALUES ("Playstation 2");
+INSERT INTO Consoles VALUES ("Playstation 3");
+INSERT INTO Consoles VALUES ("Playstation 4");
+INSERT INTO Consoles VALUES ("NES");
+INSERT INTO Consoles VALUES ("SNES");
+INSERT INTO Consoles VALUES ("Nintendo 64");
+INSERT INTO Consoles VALUES ("Gamecube");
+INSERT INTO Consoles VALUES ("Wii");
+INSERT INTO Consoles VALUES ("Wii U");
+INSERT INTO Consoles VALUES ("Gameboy");
+INSERT INTO Consoles VALUES ("Gameboy Color");
+INSERT INTO Consoles VALUES ("DS");
+INSERT INTO Consoles VALUES ("3DS");
+INSERT INTO Consoles VALUES ("Xbox");
+INSERT INTO Consoles VALUES ("Xbox 360");
+INSERT INTO Consoles VALUES ("Xbox One");
+
+INSERT INTO Games VALUES ("Backyard Baseball '10", 2009, "Sports", "Humongous Entertainment", 1, 0);
+INSERT INTO isFor VALUES ("Backyard Baseball '10", 2009, "Playstation 2");
+INSERT INTO isFor VALUES ("Backyard Baseball '10", 2009, "Wii");
+INSERT INTO isFor VALUES ("Backyard Baseball '10", 2009, "DS");
+INSERT INTO Sports VALUES ("Backyard Baseball '10", 2009, "Baseball");
+
+INSERT INTO Games VALUES ("Bass Hunter 64", 1999, "Sports", "Gear Head Studios", 1, 0);
+INSERT INTO isFor VALUES ("Bass Hunter 64", 1999, "Nintendo 64");
+INSERT INTO Sports VALUES ("Bass Hunter 64", 1999, "Fishing");
+
+INSERT INTO Games VALUES ("Beetle Adventure Racing", 1999, "Racing", "Paradigm Entertainment", 4, 0);
+INSERT INTO isFor VALUES ("Beetle Adventure Racing", 1999, "Nintendo 64");
+INSERT INTO Racing VALUES ("Beetle Adventure Racing", 1999);
+
+INSERT INTO Games VALUES ("Borderlands", 2009, "Shooter", "Gearbox Software", 2, 17);
+INSERT INTO isFor VALUES ("Borderlands", 2009, "Xbox 360");
+INSERT INTO isFor VALUES ("Borderlands", 2009, "Playstation 3");
+INSERT INTO Shooter VALUES ("Borderlands", 2009, "First-Person");
+
+INSERT INTO Games VALUES ("Borderlands 2", 2012, "Shooter", "Gearbox Software", 2, 17);
+INSERT INTO isFor VALUES ("Borderlands 2", 2012, "Xbox 360");
+INSERT INTO isFor VALUES ("Borderlands 2", 2012, "Playstation 3");
+INSERT INTO Shooter VALUES ("Borderlands 2", 2012, "First-Person");
+
+INSERT INTO Games VALUES ("Cabela's Big Game Hunter", 2007, "Sports", "Sand Grain Studios", 1, 13);
+INSERT INTO isFor VALUES ("Cabela's Big Game Hunter", 2007, "Playstation 2");
+INSERT INTO isFor VALUES ("Cabela's Big Game Hunter", 2007, "Wii");
+INSERT INTO isFor VALUES ("Cabela's Big Game Hunter", 2007, "Xbox 360");
+INSERT INTO Sports VALUES ("Cabela's Big Game Hunter", 2007, "Hunting");
+
+INSERT INTO Games VALUES ("Chrono Trigger", 1995, "RPG", "Square", 1, 0);
+INSERT INTO isFor VALUES ("Chrono Trigger", 1995, "Playstation");
+INSERT INTO isFor VALUES ("Chrono Trigger", 1995, "SNES");
+INSERT INTO RPG VALUES ("Chrono Trigger", 1995, "Standard");
+
+INSERT INTO Games VALUES ("Conker's Bad Fur Day", 2001, "Platformer", "Rare", 4, 17);
+INSERT INTO isFor VALUES ("Conker's Bad Fur Day", 2001, "Nintendo 64");
+INSERT INTO Platformer VALUES("Conker's Bad Fur Day", 2001, "3D", "Third");
+
+INSERT INTO Games VALUES ("Contra", 1987, "Shooter", "Konami", 2, 13);
+INSERT INTO isFor VALUES ("Contra", 1987, "NES");
+INSERT INTO Shooter VALUES ("Contra", 1987, "Side-Scroller");
+
+INSERT INTO Games VALUES ("Duck Hunt", 1984, "Shooter", "Nintendo", 2, 0);
+INSERT INTO isFor VALUES ("Duck Hunt", 1984, "NES");
+INSERT INTO Shooter VALUES ("Duck Hunt", 1984, "Light Gun");
+
+INSERT INTO Games VALUES ("Elder Scrolls V, The: Skyrim", 2011, "RPG", "Bethesda Game Studios", 1, 17);
+INSERT INTO isFor VALUES ("Elder Scrolls V, The: Skyrim", 2011, "Xbox 360");
+INSERT INTO isFor VALUES ("Elder Scrolls V, The: Skyrim", 2011, "Playstation 3");
+INSERT INTO RPG VALUES ("Elder Scrolls V, The: Skyrim", 2011, "Sandbox");
+
+INSERT INTO Games VALUES ("Final Fantasy VII", 1997, "RPG", "Square", 1, 13);
+INSERT INTO isFor VALUES ("Final Fantasy VII", 1997, "Playstation");
+INSERT INTO RPG VALUES ("Final Fantasy VII", 1997, "Standard");
+
+INSERT INTO Games VALUES ("Gears of War", 2006, "Shooter", "Epic Games", 2, 17);
+INSERT INTO isFor VALUES ("Gears of War", 2006, "Xbox 360");
+INSERT INTO Shooter VALUES ("Gears of War", 2006, "Third-Person");
+
+INSERT INTO Games VALUES ("Kingdom Hearts", 2002, "RPG", "Square Enix", 1, 10);
+INSERT INTO isFor VALUES ("Kingdom Hearts", 2002, "Playstation 2");
+INSERT INTO RPG VALUES ("Kingdom Hearts", 2002, "Action");
+
+INSERT INTO Games VALUES ("Metroid Prime", 2002, "Action-Adventure", "Retro Studios", 1, 13);
+INSERT INTO isFor VALUES ("Metroid Prime", 2002, "Gamecube");
+INSERT INTO Action_Adventure VALUES ("Metroid Prime", 2002, "Standard", "First");
+
+INSERT INTO Games VALUES ("Power Strike", 1988, "Shooter", "Compile", 1, 0);
+INSERT INTO isFor VALUES ("Power Strike", 1988, "Master System");
+INSERT INTO Shooter VALUES ("Power Strike", 1988, "Aerial");
+
+INSERT INTO Games VALUES ("Silent Hill", 1999, "Action-Adventure", "Konami Computer Entertainment Tokyo", 1, 17);
+INSERT INTO isFor VALUES ("Silent Hill", 1999, "Playstation");
+INSERT INTO Action_Adventure VALUES ("Silent Hill", 1999, "Survival Horror", "Third");
+
+INSERT INTO Games VALUES ("Sly Cooper and the Thievius Racoonus", 2002, "Action-Adventure", "Sucker Punch Productions", 1, 0);
+INSERT INTO isFor VALUES ("Sly Cooper and the Thievius Racoonus", 2002, "Playstation 2");
+INSERT INTO Action_Adventure VALUES ("Sly Cooper and the Thievius Racoonus", 2002, "Stealth", "Third");
+
+INSERT INTO Games VALUES ("Sonic the Hedgehog", 1991, "Platformer", "Sonic Team", 1, 0);
+INSERT INTO isFor VALUES ("Sonic the Hedgehog", 1991, "Genesis");
+INSERT INTO Platformer VALUES ("Sonic the Hedgehog", 1991, "2D", "Third");
+
+INSERT INTO Games VALUES ("Space Jam", 1996, "Sports", "Sculptured Software", 4, 0);
+INSERT INTO isFor VALUES ("Space Jam", 1996, "Saturn");
+INSERT INTO isFor VALUES ("Space Jam", 1996, "Playstation");
+INSERT INTO Sports VALUES ("Space Jam", 1996, "Basketball");
+
+INSERT INTO Games VALUES ("Street Fighter Alpha 3", 1998, "Fighting", "Capcom", 2, 13);
+INSERT INTO isFor VALUES ("Street Fighter Alpha 3", 1998, "Playstation");
+INSERT INTO Fighting VALUES ("Street Fighter Alpha 3", 1998);
+
+INSERT INTO Games VALUES ("Super Mario 64", 1996, "Platformer", "Nintendo", 1, 0);
+INSERT INTO isFor VALUES ("Super Mario 64", 1996, "Nintendo 64");
+INSERT INTO Platformer VALUES ("Super Mario 64", 1996, "3D", "Third");
+
+INSERT INTO Games VALUES ("Super Mario Kart 64", 1997, "Racing", "Nintendo", 4, 0);
+INSERT INTO isFor VALUES ("Super Mario Kart 64", 1997, "Nintendo 64");
+INSERT INTO Racing VALUES ("Super Mario Kart 64", 1997);
+
+INSERT INTO Games VALUES ("Tecmo Super Bowl", 1991, "Sports", "Tecmo", 2, 0);
+INSERT INTO isFor VALUES ("Tecmo Super Bowl", 1991, "NES");
+INSERT INTO Sports VALUES ("Tecmo Super Bowl", 1991, "Football");
+
+INSERT INTO Games VALUES ("Tony Hawk's Pro Skater 2", 2000, "Sports", "Neversoft", 2, 13);
+INSERT INTO isFor VALUES ("Tony Hawk's Pro Skater 2", 2000, "Nintendo 64");
+INSERT INTO isFor VALUES ("Tony Hawk's Pro Skater 2", 2000, "Gameboy Color");
+INSERT INTO isFor VALUES ("Tony Hawk's Pro Skater 2", 2000, "Dreamcast");
+INSERT INTO isFor VALUES ("Tony Hawk's Pro Skater 2", 2000, "Xbox");
+INSERT INTO isFor VALUES ("Tony Hawk's Pro Skater 2", 2000, "Playstation");
+INSERT INTO Sports VALUES ("Tony Hawk's Pro Skater 2", 2000, "Skateboarding");
+
+INSERT INTO Games VALUES ("Wii Sports", 2006, "Sports", "Nintendo", 4, 0);
+INSERT INTO isFor VALUES ("Wii Sports", 2006, "Wii");
+INSERT INTO Sports VALUES ("Wii Sports", 2006, "Collection");
+
+INSERT INTO Games VALUES ("World Championship Soccer", 1989, "Sports", "Sega", 2, 0);
+INSERT INTO isFor VALUES ("World Championship Soccer", 1989, "Genesis");
+INSERT INTO isFor VALUES ("World Championship Soccer", 1989, "Master System");
+INSERT INTO Sports VALUES ("World Championship Soccer", 1989, "Soccer");
+
+INSERT INTO Games VALUES ("Yoshi's Story", 1998, "Platformer", "Nintendo", 1, 0);
+INSERT INTO isFor VALUES ("Yoshi's Story", 1998, "Nintendo 64");
+INSERT INTO Platformer VALUES ("Yoshi's Story", 1998, "2D", "Third");
